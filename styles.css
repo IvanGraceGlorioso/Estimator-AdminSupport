@@ -92,14 +92,14 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; }
 }
 .profile { text-align: center; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
 .avatar {
-  width: 124px; height: 124px;
+  width: 140px; height: 140px;
   margin: 0 auto 14px;
-  border-radius: 28px;
+  border-radius: 50%;
   overflow: hidden;
   background: var(--card);
   box-shadow: var(--shadow);
 }
-.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
 .profile-name { font-weight: 700; font-size: 19px; display: inline-flex; align-items: center; gap: 6px; }
 .profile-name .ph-seal-check { color: var(--violet-text); font-size: 21px; }
 .profile-role { color: var(--muted); font-size: 16px; }
