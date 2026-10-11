@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivan Grace Glorioso — Steam & Condensate Piping Take-Off & Cost Estimator</title>
+<meta name="description" content="Steam and condensate piping take-offs, BOQs and cost estimates for Australian and US contractors, by a Mechanical Engineer and former Senior Technical Engineer at MIURA Singapore. Also flooring, roofing, siding and painting take-offs.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Apply saved theme before paint to avoid a flash.
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+
+<!-- MOBILE TOP BAR -->
+<div class="topbar">
+  <a class="topbar-brand" href="#home">
+    <img src="images/profile.png" alt="">
+    <span>Ivan Grace Glorioso</span>
+  </a>
+  <button class="icon-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="ph ph-list"></i></button>
+</div>
+
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="profile">
+      <div class="avatar">
+        <img src="images/profile.png" alt="Ivan Grace Glorioso" onerror="handleImageError(this)">
+        <div class="thumb-placeholder" style="display:none;"><i class="ph ph-user"></i></div>
+      </div>
+      <p class="profile-name">Ivan Grace Glorioso <i class="ph-fill ph-seal-check" aria-label="Verified"></i></p>
+      <p class="profile-role">Estimator &amp; Admin Support</p>
+
+      <div class="socials">
+        <a class="icon-btn" href="mailto:gloriosoivangrace@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+        <a class="icon-btn" href="https://wa.me/639777057747" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+        <a class="icon-btn" href="tel:+639777057747" aria-label="Phone"><i class="ph ph-phone"></i></a>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
+      </div>
+    </div>
+
+    <nav class="side-nav" aria-label="Main">
+      <a href="#home" data-view="home"><i class="ph ph-house"></i>Home</a>
+      <a href="#projects" data-view="projects"><i class="ph ph-folder-simple"></i>Projects</a>
+      <a href="#services" data-view="services"><i class="ph ph-stack"></i>Services</a>
+      <a href="#about" data-view="about"><i class="ph ph-user"></i>About</a>
+      <a href="#contact" data-view="contact"><i class="ph ph-paper-plane-tilt"></i>Contact</a>
+    </nav>
+
+    <p class="side-foot">© 2026 Ivan Grace Glorioso<br>Manila, Philippines</p>
+  </aside>
+
+  <main class="main">
+
+    <!-- ============ HOME ============ -->
+    <section class="view" id="view-home" data-view="home">
+      <div class="page-head">
+        <h1>Measure it once.<br class="br-sm"> Price it right.</h1>
+        <a class="btn-dark" href="#contact">Get in touch <i class="ph ph-hand-waving"></i></a>
+      </div>
+      <p class="lede">Steam and condensate piping take-offs you can price from. Send your drawings and get back an itemised, checked BOQ for your tender, from a Mechanical Engineer who has worked on steam systems.</p>
+
+      <div class="tools">
+        <div class="tools-label">
+          <span class="eyebrow">Daily drivers</span>
+          <strong>Tools I work with</strong>
+        </div>
+        <div class="tools-track">
+          <div class="tools-row">
+            <span class="tool"><img src="images/logos/costx.png" alt="">CostX</span>
+            <span class="tool"><img src="images/logos/bluebeam.png" alt="">Bluebeam Revu</span>
+            <span class="tool"><img src="images/cad.png" alt="">AutoCAD</span>
+            <span class="tool"><img src="images/revit-logo.png" alt="">Revit</span>
+            <span class="tool"><img src="images/365.png" alt="">Microsoft 365</span>
+            <span class="tool"><img src="images/procore.png" alt="">Procore</span>
+            <span class="tool"><img src="images/teams.png" alt="">Teams</span>
+            <span class="tool"><img src="images/slack.png" alt="">Slack</span>
+            <span class="tool"><img src="images/trello.png" alt="">Trello</span>
+            <span class="tool"><img src="images/click_up.png" alt="">ClickUp</span>
+            <span class="tool"><i class="ph ph-chart-bar-horizontal"></i>Microsoft Project</span>
+            <span class="tool"><img src="images/logos/claude.png" alt="">Claude</span>
+            <span class="tool"><img src="images/logos/chatgpt.png" alt="">ChatGPT</span>
+          </div>
+        </div>
+        <button class="icon-btn marquee-toggle" id="marqueeToggle" aria-label="Pause animations" aria-pressed="false"><i class="ph ph-pause"></i></button>
+      </div>
+
+      <div class="bento">
+        <!-- Projects -->
+        <a class="card card-projects" href="#projects">
+          <div class="card-head">
+            <span class="card-icon"><i class="ph ph-folder-simple"></i></span>
+            <div>
+              <h2>Projects</h2>
+              <p>Take-off and estimate samples from real drawings.</p>
+            </div>
+          </div>
+          <div class="browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="browser-body">
+              <img class="browser-shot is-on" src="images/image1.png" alt="9-level residential take-off sample">
+              <img class="browser-shot" src="images/STEAM AND CONDENSATE PIPING &amp; ACCESSORIES.png" alt="Steam and condensate piping take-off sample">
+              <img class="browser-shot" src="images/Portfolio_BOQ_BOM_Preparation.png" alt="BOQ / BOM preparation sample">
+            </div>
+            <div class="browser-dots"><span class="is-on"></span><span></span><span></span></div>
+          </div>
+        </a>
+
+        <!-- About -->
+        <a class="card card-about" href="#about">
+          <div class="card-head">
+            <span class="card-icon"><i class="ph ph-user"></i></span>
+            <div>
+              <h2>About</h2>
+              <p>Mechanical engineer turning drawings into accurate take-offs and BOQs, and keeping projects organised.</p>
+            </div>
+          </div>
+          <div class="photo-fan">
+            <span class="fan fan-1"></span>
+            <span class="fan fan-2"></span>
+            <img class="fan fan-3" src="images/profile.png" alt="Ivan Grace Glorioso">
+          </div>
+        </a>
+
+        <!-- Trades -->
+        <a class="card card-trades" href="#services">
+          <div class="card-head">
+            <span class="card-icon"><i class="ph ph-ruler"></i></span>
+            <div>
+              <h2>Trades</h2>
+              <p>What I measure and price, from plant rooms to finishes.</p>
+            </div>
+          </div>
+          <div class="chip-rows">
+            <div class="chip-track"><div class="chip-row">
+              <span class="tchip"><i class="ph ph-pipe"></i>Steam piping<b></b></span>
+              <span class="tchip"><i class="ph ph-drop"></i>Condensate<b></b></span>
+              <span class="tchip"><i class="ph ph-lightning"></i>Electrical<b></b></span>
+              <span class="tchip"><i class="ph ph-shower"></i>Plumbing<b></b></span>
+              <span class="tchip"><i class="ph ph-list-checks"></i>BOQ / BOM<b></b></span>
+            </div></div>
+            <div class="chip-track"><div class="chip-row reverse">
+              <span class="tchip"><i class="ph ph-squares-four"></i>Flooring<b></b></span>
+              <span class="tchip"><i class="ph ph-paint-roller"></i>Painting<b></b></span>
+              <span class="tchip"><i class="ph ph-door"></i>Doors &amp; hardware<b></b></span>
+              <span class="tchip"><i class="ph ph-frame-corners"></i>Windows<b></b></span>
+              <span class="tchip"><i class="ph ph-hammer"></i>Joinery<b></b></span>
+            </div></div>
+          </div>
+        </a>
+
+        <!-- Credentials -->
+        <a class="card card-creds" href="#about">
+          <div class="card-head">
+            <span class="card-icon"><i class="ph ph-certificate"></i></span>
+            <div>
+              <h2>Credentials</h2>
+              <p>Revit MEP and Bluebeam certified. CostX trained.</p>
+            </div>
+          </div>
+          <ul class="mini-list">
+            <li><i class="ph ph-calculator"></i>CostX<span>Trained</span></li>
+            <li><i class="ph ph-seal-check"></i>Bluebeam Takeoffs<span>Certified</span></li>
+            <li><i class="ph ph-seal-check"></i>Revit MEP<span>Certified</span></li>
+          </ul>
+        </a>
+
+        <!-- Services -->
+        <a class="card card-services" href="#services">
+          <div class="card-head">
+            <span class="card-icon"><i class="ph ph-stack"></i></span>
+            <div>
+              <h2>Services</h2>
+              <p>Estimating and admin support.</p>
+            </div>
+          </div>
+          <ul class="mini-list">
+            <li><i class="ph ph-pipe"></i>MEP Estimator<span>01</span></li>
+            <li><i class="ph ph-buildings"></i>Take-off Specialist<span>02</span></li>
+            <li><i class="ph ph-clipboard-text"></i>Construction Admin<span>03</span></li>
+          </ul>
+        </a>
+
+        <!-- Experience -->
+        <a class="card card-exp" href="#about">
+          <div class="card-head">
+            <span class="card-icon"><i class="ph ph-briefcase"></i></span>
+            <div>
+              <h2>Experience</h2>
+              <p>Steam systems, estimating and take-offs since 2022.</p>
+            </div>
+          </div>
+          <div class="exp-mini">
+            <div><span class="exp-icon"><i class="ph ph-ruler"></i></span><div><strong>Australian residential projects</strong><span>Freelance Take-off Specialist</span><small>2026 – Present · Painting · Flooring · Joinery</small></div></div>
+            <div><span class="exp-icon"><i class="ph ph-buildings"></i></span><div><strong>AURL Construction Corp.</strong><span>Estimating &amp; Project Coordination</span><small>2024 – 2026 · Steam piping · BOQ · Tenders</small></div></div>
+            <div><span class="exp-icon"><i class="ph ph-fire"></i></span><div><strong>MIURA Singapore</strong><span>Senior Technical Engineer</span><small>2022 – 2024 · Steam boilers · Condensate</small></div></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="view" id="view-projects" data-view="projects" hidden>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">Projects</span>
+          <h1>Take-off and estimate samples</h1>
+        </div>
+        <a class="btn-primary" href="#contact">Request full sample <i class="ph ph-arrow-up-right"></i></a>
+      </div>
+      <p class="lede">A selection of quantity take-offs and BOQs. Full sample reports available on request.</p>
+
+      <div class="filters" role="tablist">
+        <button class="chip active" data-filter="mep" role="tab" aria-selected="true"><i class="ph ph-pipe"></i>MEP <span class="chip-count">1</span></button>
+        <button class="chip" data-filter="arch" role="tab" aria-selected="false"><i class="ph ph-buildings"></i>Architectural <span class="chip-count">12</span></button>
+        <button class="chip" data-filter="boq" role="tab" aria-selected="false"><i class="ph ph-list-checks"></i>BOQ <span class="chip-count">2</span></button>
+      </div>
+
+      <div class="filter-intro card" data-intro="mep">
+        <p><strong>How to do a proper MEP take-off</strong> — Accurate quantities come from a clear process: confirm what you're measuring, ask about anything unclear before you count, and check every system before it goes to pricing.</p>
+        <ol class="boq-steps">
+          <li>Register the drawings</li>
+          <li>Review scope and specs</li>
+          <li>Raise RFIs early</li>
+          <li>Set up the take-off</li>
+          <li>Measure and count</li>
+          <li>Cross-check</li>
+          <li>Close out RFIs and revisions</li>
+          <li>Hand over</li>
+        </ol>
+      </div>
+
+      <div class="filter-intro card" data-intro="arch" hidden>
+        <p><strong>Architectural take-offs</strong> — Trade-by-trade quantities measured from plans, sections and elevations, with wastage allowances and clear notes, ready for pricing.</p>
+        <div class="specialties">
+          <span class="specialties-label"><i class="ph-fill ph-star"></i>Most comfortable with</span>
+          <span class="spec"><i class="ph ph-squares-four"></i>Flooring</span>
+          <span class="spec"><i class="ph ph-paint-roller"></i>Painting</span>
+          <span class="spec"><i class="ph ph-square-split-horizontal"></i>Ceiling</span>
+          <span class="spec"><i class="ph ph-house-line"></i>Roofing</span>
+        </div>
+      </div>
+
+      <div class="filter-intro card" data-intro="boq" hidden>
+        <p><strong>BOQ Preparation</strong> — A good BOQ starts from the drawings and specifications, not the price list. Each item is measured by trade or system, described clearly with its unit and quantity, and checked against the drawings before it's priced.</p>
+        <ol class="boq-steps">
+          <li>Review drawings, specs and scope</li>
+          <li>Measure quantities by trade or system</li>
+          <li>Itemise with units, wastage and notes</li>
+          <li>Cross-check, then roll up to a summary</li>
+        </ol>
+      </div>
+
+      <div class="project-grid">
+        <article class="project" data-cat="mep">
+          <div class="project-thumb"><img src="images/STEAM AND CONDENSATE PIPING &amp; ACCESSORIES.png" alt="Steam and condensate piping take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Mechanical</span><h3>Steam and condensate piping take-off</h3><p>Pipe, fittings, valves, traps and insulation quantities from piping drawings.</p></div>
+        </article>
+        <article class="project" data-cat="boq" hidden>
+          <div class="project-thumb"><img src="images/BOQ_01_Trade_Summary AR.png" alt="Builder's bill of quantities trade summary, residential apartment development" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">BOQ · Architectural</span><h3>Residential apartment BOQ — trade summary</h3><p>Builder's bill of quantities in AUD, with 13 trades rolled up from linked detailed bills.</p></div>
+        </article>
+        <article class="project" data-cat="boq" hidden>
+          <div class="project-thumb"><img src="images/BOM_02_Cost_Buildup_blurred.png" alt="Bill of quantities and materials, cost build-up and selling price, steam and condensate piping" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">BOQ · MEP</span><h3>Steam piping BOQ / BOM — cost build-up</h3><p>Food manufacturing plant. Material, labour, safety factor and margin inputs re-price every line automatically.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/flooring.png" alt="Flooring take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span> <span class="tag tag-spec"><i class="ph-fill ph-star"></i>Specialty</span><h3>Flooring take-off</h3><p>Floor finishes measured by area and type, with wastage allowances.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/painting.png" alt="Painting take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span> <span class="tag tag-spec"><i class="ph-fill ph-star"></i>Specialty</span><h3>Painting take-off</h3><p>Paint areas by surface, coat and finish.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/ceiling.png" alt="Ceiling take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span> <span class="tag tag-spec"><i class="ph-fill ph-star"></i>Specialty</span><h3>Ceiling take-off</h3><p>Ceiling areas, bulkheads and linear trims.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/Roofing.jpeg" alt="Roofing take-off with roof area, flashing and accessories schedules" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span> <span class="tag tag-spec"><i class="ph-fill ph-star"></i>Specialty</span><h3>Roofing take-off</h3><p>Alterations and additions, Victoria AU. Metal deck and corrugated roof areas, flashings, cappings, gutters, downpipes and skylights.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/Roof%20framing.png" alt="Roof framing take-off in Bluebeam Revu" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Roof framing take-off</h3><p>Alterations and additions, Victoria AU. Rafters, beams and roof framing members measured from the structural framing plan in Bluebeam.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/image1.png" alt="9-level residential take-off in CostX" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>9-level residential, Australia</h3><p>Complete architectural take-off measured floor by floor in CostX.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/joinery.png" alt="Joinery take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Joinery take-off</h3><p>Joinery items counted and scheduled from architectural drawings.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/carpentry.png" alt="Carpentry take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Carpentry take-off</h3><p>Framing and carpentry quantities by member and length.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/doors and hardware.png" alt="Doors and hardware take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Doors and hardware</h3><p>Door and hardware schedules counted by type.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/windows.png" alt="Windows take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Windows take-off</h3><p>Window counts and sizes scheduled from elevations and plans.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/wall w height portfolio.png" alt="Wall take-off with heights" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Walls with heights</h3><p>Wall lengths and heights measured for linings and finishes.</p></div>
+        </article>
+        <article class="project" data-cat="arch" hidden>
+          <div class="project-thumb"><img src="images/exterior elements.png" alt="Exterior elements take-off" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="project-body"><span class="tag">Architectural</span><h3>Exterior elements</h3><p>Cladding, roofing and external finishes quantities.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="view" id="view-services" data-view="services" hidden>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">Services</span>
+          <h1>Estimating and admin support</h1>
+        </div>
+      </div>
+      <p class="lede">From take-offs and BOQs to RFIs, submittals and scheduling. Choose a service to see what's included and sample work.</p>
+
+      <!-- Service options -->
+      <div class="svc-tabs" role="tablist" aria-label="Services">
+        <button class="svc-tab active" role="tab" aria-selected="true" aria-controls="svc-mep" id="tab-mep">
+          <span class="card-icon"><i class="ph ph-pipe"></i></span>
+          <span><strong>MEP Estimator</strong><small>Mechanical, Electrical, Plumbing</small></span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-arch" id="tab-arch">
+          <span class="card-icon"><i class="ph ph-buildings"></i></span>
+          <span><strong>Take-off Specialist</strong><small>Architectural Trades</small></span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-admin" id="tab-admin">
+          <span class="card-icon"><i class="ph ph-clipboard-text"></i></span>
+          <span><strong>Construction Admin Support</strong><small>RFIs, submittals, documents</small></span>
+        </button>
+      </div>
+
+      <!-- MEP ESTIMATOR -->
+      <div class="svc-panel" id="svc-mep" role="tabpanel" aria-labelledby="tab-mep">
+        <article class="card svc-section">
+          <div class="slot"><img src="images/STEAM AND CONDENSATE PIPING &amp; ACCESSORIES.png" alt="Steam and condensate piping take-off in CostX, AURL North Plant" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="svc-text">
+            <span class="svc-num">Section 1</span>
+            <h3><i class="ph ph-fan"></i>Mechanical</h3>
+            <p>Steam and condensate piping measured line by line from plant layouts and isometrics: pipe by size and schedule, fittings, flanges, valves, traps, strainers, insulation and cladding, grouped by production area.</p>
+          </div>
+        </article>
+
+        <article class="card svc-section svc-text-only">
+          <div class="svc-text">
+            <span class="svc-num">Section 2</span>
+            <h3><i class="ph ph-lightning"></i>Electrical</h3>
+            <p>Cable trays, conduits and cabling by size and length, plus lighting, power points, switchboards and fixtures counted from electrical layouts.</p>
+          </div>
+        </article>
+
+        <article class="card svc-section svc-text-only">
+          <div class="svc-text">
+            <span class="svc-num">Section 3</span>
+            <h3><i class="ph ph-drop"></i>Plumbing</h3>
+            <p>Water supply, sanitary and drainage pipework by size and material, with fittings, valves and sanitary fixtures counted from hydraulic drawings.</p>
+          </div>
+        </article>
+
+        <article class="card svc-section">
+          <div class="slot"><img src="images/Portfolio_BOQ_BOM_Preparation.png" alt="BOQ / BOM preparation for steam and condensate piping, RBC Building 2" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="svc-text">
+            <span class="svc-num">Section 4</span>
+            <h3><i class="ph ph-list-checks"></i>BOQ Preparation</h3>
+            <p>Itemised BOQ / BOM arranged by system, line, pipe size and area, so suppliers can quote and you can price straight from it.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- ESTIMATOR (ARCHITECTURAL TRADES) -->
+      <div class="svc-panel" id="svc-arch" role="tabpanel" aria-labelledby="tab-arch" hidden>
+        <article class="card svc-section svc-wide">
+          <div class="slot"><img src="images/image1.png" alt="9-level residential take-off in CostX, Bassendean WA" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="svc-text">
+            <span class="svc-num">Section 1</span>
+            <h3><i class="ph ph-ruler"></i>Take-off Specialist</h3>
+            <p>Full architectural take-off for a 9-level residential development in Australia, measured floor by floor in CostX: ceilings, flooring, painting, windows, doors and hardware, joinery, carpentry, walls and exterior elements.</p>
+          </div>
+          <div class="gallery">
+            <figure><img src="images/flooring.png" alt="Flooring take-off" data-zoom><figcaption>Flooring</figcaption></figure>
+            <figure><img src="images/joinery.png" alt="Joinery take-off" data-zoom><figcaption>Joinery</figcaption></figure>
+            <figure><img src="images/painting.png" alt="Painting take-off" data-zoom><figcaption>Painting</figcaption></figure>
+            <figure><img src="images/wall w height portfolio.png" alt="Walls with heights take-off" data-zoom><figcaption>Walls with heights</figcaption></figure>
+            <figure><img src="images/ceiling.png" alt="Ceiling take-off" data-zoom><figcaption>Ceiling</figcaption></figure>
+            <figure><img src="images/windows.png" alt="Windows take-off" data-zoom><figcaption>Windows</figcaption></figure>
+            <figure><img src="images/doors and hardware.png" alt="Doors and hardware take-off" data-zoom><figcaption>Doors &amp; hardware</figcaption></figure>
+            <figure><img src="images/carpentry.png" alt="Carpentry take-off" data-zoom><figcaption>Carpentry</figcaption></figure>
+            <figure><img src="images/exterior elements.png" alt="Exterior elements take-off" data-zoom><figcaption>Exterior elements</figcaption></figure>
+          </div>
+        </article>
+
+        <article class="card svc-section">
+          <div class="slot"><img src="images/BOQ_01_Trade_Summary%20AR.png" alt="Builder's bill of quantities trade summary, residential apartment development" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-image"></i></div></div>
+          <div class="svc-text">
+            <span class="svc-num">Section 2</span>
+            <h3><i class="ph ph-list-checks"></i>BOQ Preparation</h3>
+            <p>Take-off quantities organised into a clear, trade-by-trade BOQ with units, wastage allowances and scope notes, ready for pricing and tender review.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- CONSTRUCTION ADMIN SUPPORT -->
+      <div class="svc-panel" id="svc-admin" role="tabpanel" aria-labelledby="tab-admin" hidden>
+        <div class="card admin-intro admin-sched">
+          <h3><i class="ph ph-calendar-dots"></i>Admin Support Tools</h3>
+          <div class="admin-tools">
+            <span>Project schedules:</span>
+            <span class="tool"><i class="ph ph-chart-bar-horizontal"></i>Microsoft Project</span>
+          </div>
+          <div class="admin-tools">
+            <span>Crew &amp; task coordination:</span>
+            <span class="tool"><i class="ph ph-table"></i>Smartsheet</span>
+            <span class="tool"><i class="ph ph-kanban"></i>Monday.com</span>
+            <span class="tool"><img src="images/click_up.png" alt="">ClickUp</span>
+            <span class="tool"><img src="images/logos/asana.png" alt="">Asana</span>
+            <span class="tool"><img src="images/trello.png" alt="">Trello</span>
+            <span class="tool"><i class="ph ph-wrench"></i>Simpro</span>
+          </div>
+          <div class="admin-tools">
+            <span>Calendar &amp; meetings:</span>
+            <span class="tool"><i class="ph ph-calendar"></i>Outlook Calendar</span>
+            <span class="tool"><i class="ph ph-calendar-blank"></i>Google Calendar</span>
+            <span class="tool"><img src="images/teams.png" alt="">Teams</span>
+            <span class="tool"><i class="ph ph-video-camera"></i>Zoom</span>
+            <span class="tool"><i class="ph ph-video"></i>Google Meet</span>
+            <span class="tool"><i class="ph ph-calendar-plus"></i>Calendly</span>
+          </div>
+          <div class="admin-tools">
+            <span>AI tools:</span>
+            <span class="tool"><img src="images/logos/claude.png" alt="">Claude <small>Doc formatting</small></span>
+            <span class="tool"><img src="images/logos/chatgpt.png" alt="">ChatGPT <small>Doc formatting</small></span>
+          </div>
+        </div>
+        <div class="admin-grid">
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-chat-circle-text"></i></span><h3>RFI management</h3><p>Draft, log and track RFIs, chase responses and distribute answers to the team.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-stamp"></i></span><h3>Submittals &amp; shop drawings</h3><p>Maintain the submittal register and track review status from issue to approval.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-folders"></i></span><h3>Document control</h3><p>Drawing registers, revisions, transmittals and filing, so everyone works from the latest set. Documents formatted cleanly with AI support from Claude and ChatGPT.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-notepad"></i></span><h3>Meeting minutes &amp; reports</h3><p>Minutes, action items and weekly progress reports, sent out on time.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-calendar-check"></i></span><h3>Schedule management</h3><p>Track tasks, deadlines and look-aheads in Asana so nothing slips.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-phone-call"></i></span><h3>Calls &amp; follow-ups</h3><p>Call subcontractors, suppliers and consultants through CloudTalk, with notes logged after every call.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-arrows-clockwise"></i></span><h3>Variations &amp; change orders</h3><p>Log variations, prepare backup quantities and track approvals.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-handshake"></i></span><h3>Subcontractor coordination</h3><p>Request quotes, track insurances and compliance documents, and follow up on deliverables.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-receipt"></i></span><h3>Progress claims support</h3><p>Prepare quantities and documentation for monthly progress claims.</p></div>
+          <div class="card admin-item"><span class="card-icon"><i class="ph ph-flag-checkered"></i></span><h3>Project closeout</h3><p>Defects lists, as-builts, warranties and O&amp;M manuals collected and handed over.</p></div>
+        </div>
+      </div>
+
+      <div id="svc-how">
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">01</span><i class="ph ph-upload-simple"></i><h3>Send your drawings</h3><p>PDF, DWG or Revit files: piping layouts, isometrics or P&amp;IDs, plus the specification and scope notes.</p></div>
+        <div class="step"><span class="step-num">02</span><i class="ph ph-receipt"></i><h3>Quote and delivery date</h3><p>You get a fixed price and delivery date before any work starts.</p></div>
+        <div class="step"><span class="step-num">03</span><i class="ph ph-magnifying-glass"></i><h3>Take-off and checks</h3><p>I measure, cross-check quantities, and flag missing or conflicting information on the drawings.</p></div>
+        <div class="step"><span class="step-num">04</span><i class="ph ph-file-xls"></i><h3>You receive</h3><p>An itemised Excel BOQ and marked-up PDF drawings, with revisions for any addenda.</p></div>
+      </div>
+      </div>
+
+      <div id="svc-how-admin" hidden>
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">01</span><i class="ph ph-video-camera"></i><h3>Intro call</h3><p>We go through your projects, your team and the tools you already use, and agree on what I take off your plate.</p></div>
+        <div class="step"><span class="step-num">02</span><i class="ph ph-key"></i><h3>Access and setup</h3><p>You add me to your email, shared drives and project tools. We set working hours, priorities and how you want updates.</p></div>
+        <div class="step"><span class="step-num">03</span><i class="ph ph-clipboard-text"></i><h3>Daily support</h3><p>I handle RFIs, submittals, document control, calls and schedule updates, and flag anything that needs your decision.</p></div>
+        <div class="step"><span class="step-num">04</span><i class="ph ph-file-text"></i><h3>You receive</h3><p>A weekly report of progress, open items and next actions, with registers and files kept up to date.</p></div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="view" id="view-about" data-view="about" hidden>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">About</span>
+          <h1>Mechanical Engineer. Estimator. Admin Support.</h1>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-photo">
+          <img src="images/profile.png" alt="Ivan Grace Glorioso" onerror="handleImageError(this)">
+          <div class="thumb-placeholder" style="display:none;"><i class="ph ph-user"></i></div>
+        </div>
+        <div class="card about-text">
+          <p>Mechanical engineer who turns drawings into accurate take-offs and BOQs, from Australian residential finishes to industrial steam piping. I use Bluebeam, CostX, AutoCAD, and Revit, and I keep projects moving with RFIs, submittals, and document control.</p>
+          <p class="about-tagline">Accurate numbers. Organized projects. Confident bids.</p>
+          <div class="badges">
+            <span class="badge"><i class="ph ph-buildings"></i>Ex-MIURA Singapore, Senior Technical Engineer</span>
+            <span class="badge"><i class="ph ph-graduation-cap"></i>BS Mechanical Engineering</span>
+            <span class="badge"><i class="ph ph-graduation-cap"></i>MS Engineering Management</span>
+            <span class="badge"><i class="ph ph-seal-check"></i>Revit MEP certified</span>
+            <span class="badge"><i class="ph ph-seal-check"></i>Bluebeam Takeoffs certified</span>
+            <span class="badge"><i class="ph ph-calculator"></i>CostX trained</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Experience</h2>
+      <div class="card timeline">
+        <div class="exp-entry">
+          <div class="exp-year">June 2026 – Present</div>
+          <div>
+            <p class="exp-role">Freelance Take-off Specialist</p>
+            <p class="exp-company">Australian Residential Projects</p>
+            <ul>
+              <li>Take-offs for painting, flooring and ceiling joinery from architectural drawings</li>
+              <li>BOQ inputs and scope breakdowns for client pricing review</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-entry">
+          <div class="exp-year">2024 – 2026</div>
+          <div>
+            <p class="exp-role">Estimating &amp; Project Coordination</p>
+            <p class="exp-company">AURL Construction Corporation</p>
+            <ul>
+              <li>Steam piping and condensate quantity take-off and estimation</li>
+              <li>Cost estimates, quotations and quantity take-offs for residential and industrial projects</li>
+              <li>Tender and bid documentation, and subcontractor coordination</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-entry">
+          <div class="exp-year">2022 – 2024</div>
+          <div>
+            <p class="exp-role">Senior Technical Engineer</p>
+            <p class="exp-company">MIURA Singapore · Boiler supplier</p>
+            <ul>
+              <li>Technical support for steam boiler systems, including steam supply and condensate return piping</li>
+              <li>Reviewed piping layouts and equipment requirements with contractors and clients</li>
+              <li>Supported quotations and technical submissions for steam system projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">Credentials</h2>
+      <div class="cert-grid">
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert.revitmep.png" alt="Revit MEP certificate" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Revit MEP Mechanical and Plumbing Professional</h3>
+          <p>LinkedIn Learning</p>
+        </div>
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert.bbeam.png" alt="Bluebeam certificate" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Bluebeam Revu: Construction Takeoffs</h3>
+          <p>Autodesk</p>
+        </div>
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert.costx.png" alt="CostX certificate" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Cost Estimation of Australian Residential Projects using CostX</h3>
+          <p>Construction-VA Training Center</p>
+        </div>
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert%20mastercost.png" alt="Cost Estimation for Australian Residential Projects certificate, 27-hour course" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Cost Estimation for Australian Residential Projects (27 hours)</h3>
+          <p>Construct-VA Training Center</p>
+        </div>
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert.revit.png" alt="Autodesk Revit MEPF certificate of completion" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Autodesk Revit MEPF (Revit MEP 2024)</h3>
+          <p>Autodesk Authorized Training Center · MicroCADD</p>
+        </div>
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert.estimating.png" alt="Construction Estimating Takeoff certificate" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Construction Estimating Takeoff</h3>
+          <p>LinkedIn Learning</p>
+        </div>
+        <div class="card cert">
+          <div class="cert-img"><img src="images/cert.reading%5Blans.png" alt="Construction Management: Reading Drawings and Specifications certificate" data-zoom onerror="handleImageError(this)"><div class="thumb-placeholder" style="display:none;"><i class="ph ph-certificate"></i></div></div>
+          <span class="tag">Certificate</span>
+          <h3>Construction Management: Reading Drawings and Specifications</h3>
+          <p>LinkedIn Learning · PMI Registered Education Provider</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="view" id="view-contact" data-view="contact" hidden>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h1>Send your drawings. I'll handle the scope.</h1>
+        </div>
+      </div>
+      <p class="lede">Need a take-off, a BOQ or an extra hand on project admin? Tell me what you need and when, and I'll reply with a quote and delivery date.</p>
+
+      <div class="contact-grid">
+        <div class="contact-list">
+          <a class="card contact-item" href="mailto:gloriosoivangrace@gmail.com">
+            <span class="card-icon"><i class="ph ph-envelope-simple"></i></span>
+            <div><small>Email</small><strong>gloriosoivangrace@gmail.com</strong></div>
+          </a>
+          <a class="card contact-item" href="tel:+639777057747">
+            <span class="card-icon"><i class="ph ph-phone"></i></span>
+            <div><small>Phone / WhatsApp</small><strong>+63 977 705 7747</strong></div>
+          </a>
+          <div class="card contact-item">
+            <span class="card-icon"><i class="ph ph-map-pin"></i></span>
+            <div><small>Location</small><strong>Manila, Philippines</strong><small>Available for Australian and US hours</small></div>
+          </div>
+        </div>
+
+        <form class="card" id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+          </div>
+          <div class="field">
+            <label for="project-type">Scope</label>
+            <select id="project-type" name="project-type">
+              <option>Mechanical / steam &amp; condensate piping</option>
+              <option>Electrical</option>
+              <option>Plumbing</option>
+              <option>BOQ preparation</option>
+              <option>Flooring</option>
+              <option>Roofing</option>
+              <option>Siding / cladding</option>
+              <option>Painting</option>
+              <option>Multiple trades</option>
+              <option>Construction admin support</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Project, location (state), and when you need it" required></textarea>
+          </div>
+          <button class="btn-primary submit-btn" type="submit">Email me <i class="ph ph-paper-plane-tilt"></i></button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+
+<a class="status-pill" href="#contact"><span class="status-dot"></span>Available for projects</a>
+
+<!-- Image viewer -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="icon-btn lightbox-close" id="lightboxClose" aria-label="Close image"><i class="ph ph-x"></i></button>
+  <img id="lightboxImg" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
