@@ -687,7 +687,8 @@ a.contact-item:hover { border-color: var(--violet-text); }
 }
 
 @media (max-width: 860px) {
-  .shell { grid-template-columns: 1fr; }
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .main { min-width: 0; }
   .topbar {
     display: flex; align-items: center; justify-content: space-between;
     position: sticky; top: 0; z-index: 30;
