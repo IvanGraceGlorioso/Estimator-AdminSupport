@@ -87,26 +87,51 @@ document.addEventListener('DOMContentLoaded', function () {
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightboxImg');
   var lightboxCaption = document.getElementById('lightboxCaption');
+  var lightboxPrev = document.getElementById('lightboxPrev');
+  var lightboxNext = document.getElementById('lightboxNext');
   var lastFocus = null;
+  var slides = [];
+  var slideIndex = 0;
   function closeLightbox() {
     lightbox.hidden = true;
     if (lastFocus) lastFocus.focus();
+  }
+  // Show one slide; in a gallery the caption also gets a "3 / 10" counter
+  function showSlide(i) {
+    slideIndex = (i + slides.length) % slides.length;
+    var s = slides[slideIndex];
+    lightboxImg.src = s.src;
+    lightboxImg.alt = s.caption;
+    lightboxCaption.textContent = slides.length > 1 ? s.caption + '  (' + (slideIndex + 1) + ' / ' + slides.length + ')' : s.caption;
   }
   document.querySelectorAll('img[data-zoom]').forEach(function (img) {
     img.tabIndex = 0;
     function open() {
       lastFocus = img;
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-      lightboxCaption.textContent = img.alt;
+      // data-gallery="src|caption;src|caption" turns the image into a cover for a set of photos
+      slides = img.dataset.gallery
+        ? img.dataset.gallery.split(';').map(function (item) {
+            var parts = item.split('|');
+            return { src: parts[0], caption: parts[1] || img.alt };
+          })
+        : [{ src: img.src, caption: img.alt }];
+      lightboxPrev.hidden = lightboxNext.hidden = slides.length < 2;
+      showSlide(0);
       lightbox.hidden = false;
       document.getElementById('lightboxClose').focus();
     }
     img.addEventListener('click', open);
     img.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
   });
+  lightboxPrev.addEventListener('click', function (e) { e.stopPropagation(); showSlide(slideIndex - 1); });
+  lightboxNext.addEventListener('click', function (e) { e.stopPropagation(); showSlide(slideIndex + 1); });
   lightbox.addEventListener('click', function (e) { if (e.target !== lightboxImg) closeLightbox(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
+  document.addEventListener('keydown', function (e) {
+    if (lightbox.hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (slides.length > 1 && e.key === 'ArrowLeft') showSlide(slideIndex - 1);
+    else if (slides.length > 1 && e.key === 'ArrowRight') showSlide(slideIndex + 1);
+  });
 
   // --- Tools marquee: duplicate the row so the loop is seamless ---
   var row = document.querySelector('.tools-row');

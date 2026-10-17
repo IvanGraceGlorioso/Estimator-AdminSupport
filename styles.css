@@ -489,6 +489,17 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; }
 .project-body { padding: 16px 18px 20px; }
 .project-body h3 { font-size: 19px; font-weight: 600; margin: 10px 0 4px; }
 .project-body p { font-size: 16px; color: var(--muted); }
+.project-thumb:has(.thumb-count) { position: relative; }
+.project-thumb img[data-gallery] { cursor: zoom-in; }
+.thumb-count {
+  position: absolute; right: 10px; bottom: 10px;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .65); color: #fff;
+  font-size: 14px; font-weight: 600;
+  pointer-events: none;
+}
 
 /* ===== Services ===== */
 .svc-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 20px; }
@@ -579,6 +590,11 @@ img[data-zoom] { cursor: zoom-in; transition: transform .3s, box-shadow .3s; }
 .lightbox img { max-width: 100%; max-height: calc(100vh - 140px); object-fit: contain; border-radius: 10px; background: #fff; }
 .lightbox p { color: #fff; font-size: 18px; font-weight: 500; text-align: center; }
 .lightbox-close { position: absolute; top: 16px; right: 16px; }
+.lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); }
+.lightbox-nav:hover { transform: translateY(-50%); }
+.lightbox-nav[hidden] { display: none; }
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
 
 .section-title { font-size: 26px; font-weight: 700; margin: 44px 0 16px; }
 
